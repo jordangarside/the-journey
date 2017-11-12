@@ -50,7 +50,7 @@ Template.theJourney.helpers({
     for (let i = 1; i <= totalJourneys; i++) {
       let journeyScrollValue =  preValue / i;
       let journey;
-      if (journeyScrollValue < 3) {
+      if (journeyScrollValue < 2) {
         if (i < 10) {
           journey = {
             x: 100 + (Math.sin(journeyScrollValue * Math.PI) * 6),
@@ -59,7 +59,7 @@ Template.theJourney.helpers({
             width: 2,
             fill: "none",
           };
-        } else if (i < 30) {
+        } else if (i < 20) {
           journey = {
             x: 100 + (Math.sin(journeyScrollValue * 10 * Math.PI) * 100),
             y: 100 + (Math.sin(journeyScrollValue * 5 * Math.PI) * 100),
@@ -67,7 +67,7 @@ Template.theJourney.helpers({
             width: 2,
             fill: "none",
           };
-        } else if (i < 60) {
+        } else if (i < 40) {
           journey = {
             x: 100 + (Math.sin(journeyScrollValue * 10 * Math.PI) * 18),
             y: 100 + (Math.sin(journeyScrollValue * 18 * Math.PI) * 18),
@@ -75,11 +75,11 @@ Template.theJourney.helpers({
             width: 0,
             fill: "white",
           }
-        } else if (i < 80) {
+        } else if (i < 60) {
           journey = {
             x: 100 + (Math.sin(journeyScrollValue * 10 * Math.PI) * 18),
             y: 100 + (Math.sin(journeyScrollValue * 18 * Math.PI) * 18),
-            radius_circle: Math.pow(journeyScrollValue, 14) * 3 * (i-60),
+            radius_circle: Math.pow(journeyScrollValue, 14) * 3 * (i-40),
             width: 0,
             fill: "white",
           }
