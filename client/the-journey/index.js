@@ -75,7 +75,7 @@ Template.theJourney.helpers({
             width: 0,
             fill: "white",
           }
-        } else if (i < 60) {
+        } else if (i < 56) {
           journey = {
             x: 100 + (Math.sin(journeyScrollValue * 10 * Math.PI) * 18),
             y: 100 + (Math.sin(journeyScrollValue * 18 * Math.PI) * 18),
