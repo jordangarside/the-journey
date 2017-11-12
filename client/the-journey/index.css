@@ -1,0 +1,12 @@
+.containing-the-journey {
+  background-color: black;
+    height: 100%;
+    width: 100%;
+}
+#the-journey {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.journey {
+}

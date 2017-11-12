@@ -1,0 +1,11 @@
+<template name="theJourney">
+  <div class="containing-the-journey">
+    <svg id="the-journey" viewBox="0 0 200 200">
+      {{#each journeys}}
+        {{#if viewable journey}}
+          <circle class="journey" cx="{{x}}" cy="{{y}}" r="{{radius_circle}}" stroke="white" stroke-width="{{width}}" fill="{{fill}}"/>
+        {{/if}}
+      {{/each}}
+    </svg>
+  </div>
+</template>
